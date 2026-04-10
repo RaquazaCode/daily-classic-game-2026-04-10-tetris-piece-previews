@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>daily-classic-game-2026-04-10-tetris-piece-previews</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hud">
+        <h1>Tetris: Piece Previews</h1>
+        <p class="subtitle">Deterministic seeded stacker with a three-piece preview lane.</p>
+        <div class="stats">
+          <div><span>Score</span><strong id="score">0</strong></div>
+          <div><span>Lines</span><strong id="lines">0</strong></div>
+          <div><span>Level</span><strong id="level">1</strong></div>
+          <div><span>Mode</span><strong id="mode">Idle</strong></div>
+          <div><span>Time</span><strong id="time">00:00</strong></div>
+        </div>
+        <p class="controls">Controls: Enter start, Arrows move/rotate, Space hard drop, P pause, R reset.</p>
+      </section>
+      <section class="board-wrap">
+        <canvas id="board" width="300" height="600" aria-label="Tetris board"></canvas>
+      </section>
+      <aside class="side-panel">
+        <h2>Next Pieces</h2>
+        <ol id="preview" class="preview-list"></ol>
+        <div class="buttons">
+          <button id="startBtn" type="button">Start</button>
+          <button id="pauseBtn" type="button">Pause/Resume</button>
+          <button id="resetBtn" type="button">Reset</button>
+        </div>
+      </aside>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

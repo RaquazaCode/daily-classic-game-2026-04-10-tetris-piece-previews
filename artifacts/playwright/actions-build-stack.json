@@ -1,0 +1,12 @@
+{
+  "schema": "web_game_playwright_client",
+  "buttons": [
+    "left_mouse_button",
+    "space_key",
+    "arrow_right",
+    "space_key"
+  ],
+  "mouse_x": 300,
+  "mouse_y": 332,
+  "frames": 16
+}
